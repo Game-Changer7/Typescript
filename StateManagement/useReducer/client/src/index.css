@@ -1,0 +1,24 @@
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .someOtherClass {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .incrementButton {
+    background-color: green;
+    color: white;
+  }
+  
+  .decrementButton {
+    background-color: red;
+    color: white;
+  }
+  
