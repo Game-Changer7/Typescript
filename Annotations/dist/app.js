@@ -53,6 +53,7 @@ console.log(user1);
 let person1 = {
     name: "John",
     age: 30,
+    gender: "Male",
 };
 console.log(person1);
 let size = "medium";

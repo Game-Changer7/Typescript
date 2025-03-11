@@ -2,6 +2,9 @@
 //? What is Annotation?
 // Annotations are used to specify the type of a variable, function, or class.
 
+//! Syntax 
+// let variableName: type = value;
+
 //? String
 let message: string = "Hello World";
 console.log(message);
@@ -60,6 +63,10 @@ if (typeof input === "string") {
 }
 
 //? Void
+//! Syntax
+// function functionName(): void {
+//     Function body
+// }
 let greet: (name: string) => void = (name: string) => {
     console.log(`Hello, ${name}!`);
 };
@@ -92,18 +99,22 @@ type Admin = {
 let user1: User & Admin = {
     name: "John",
     age: 30,
+
+
     role: "Admin",
 };      
 console.log(user1);
 
-//? Type Aliases
+//! Type Aliases
 type Person = {
     name: string;
     age: number;
+    gender: string;
 };
 let person1: Person = {
     name: "John",
     age: 30,
+    gender: "Male" ,
 };  
 console.log(person1);
 
