@@ -135,7 +135,7 @@ enum FileAccess2 {
   ReadWrite = Read | Write,
 }
 const fileAccess = FileAccess2.ReadWrite;
-console.log(fileAccess); // Output: "rw"
+console.log(fileAccess); // Output: 6
 
 //? Enum File Access Example 3
 enum FileAccess3 {
@@ -145,4 +145,4 @@ enum FileAccess3 {
   ReadWrite = Read | Write,
 }
 const fileAccess3: FileAccess3 = FileAccess3.ReadWrite;
-console.log(fileAccess3); // Output: "rw"
+console.log(fileAccess3); // Output: 6
