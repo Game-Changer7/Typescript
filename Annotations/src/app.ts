@@ -265,5 +265,3 @@ function createProduct2(name: string, price: number, description?: string): Prod
 let product3 = createProduct2("Laptop", 999);
 console.log(product3);
 
-
-

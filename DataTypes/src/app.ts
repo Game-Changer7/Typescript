@@ -174,3 +174,15 @@ const calculateTotalInStock = (items: ProductExample[]): number => {
 
 const total = calculateTotalInStock(products);
 console.log(`Total Price of Products in Stock: $${total}`);
+
+
+// number: for numeric values.
+// string: for text values.
+// boolean: for true/false values.
+// null: for an empty or uninitialized value.
+// undefined: for a variable that hasn’t been assigned a value yet.
+// any: for a value that can be of any type (use sparingly).
+// unknown: a safer alternative to any, requiring type checks before use.
+// void: for functions that don’t return a value.
+// never: for values that never occur (like functions that always throw errors).
+// object: for any non-primitive value.
