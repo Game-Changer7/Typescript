@@ -84,4 +84,4 @@ const userWithRole: UserWithRole = {
     ]
 };
 
-console.log(userWithRole.contactInfo.map((contact) => contact.role.includes('admin'))); // Now it works fine
+console.log(userWithRole.contactInfo.map((contact) => contact.role.includes('admin'))); 

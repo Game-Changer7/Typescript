@@ -1,0 +1,10 @@
+"use strict";
+const products = [1, "2", 3, "4", 5];
+console.log(products);
+const coordinate = [40.7128, -74.006, 'K'];
+console.log(coordinate);
+const position1 = [40.7128, -74.006];
+const position2 = [37.7749, -122.4194];
+console.log(position1, position2);
+const students = [1, 'Kaushik', 2, 'John', 3, 'Jane', 4, '7', 5];
+const studentNames = students.filter((student) => typeof student === 'string');

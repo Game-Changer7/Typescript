@@ -53,7 +53,6 @@ class Child extends Person {
   constructor(name: string) {
     super(name); // Accessing the parent's constructor
   }
-
   play() {
     console.log(`${this.name} is playing.`); // Public method
   }

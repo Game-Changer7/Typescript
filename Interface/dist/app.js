@@ -46,11 +46,36 @@ const person1 = {
     },
 };
 greet(person1);
-const myDog1 = {
-    name: "Buddy",
-    breed: "Labrador",
-    makeSound() {
-        console.log("Woof!");
-    },
-};
-myDog1.makeSound();
+class ProductManager {
+    constructor() {
+        this.products = [];
+    }
+    addProduct(product) {
+        this.products.push(product);
+        console.log(`Product ${product.name} added successfully.`);
+    }
+    removeProduct(productId) {
+        const index = this.products.findIndex((product) => product.id === productId);
+        if (index !== -1) {
+            this.products.splice(index, 1);
+            console.log(`Product with ID ${productId} removed.`);
+        }
+        else {
+            console.log(`Product with ID ${productId} not found.`);
+        }
+    }
+    totalProducts() {
+        return this.products.length;
+    }
+    listProducts() {
+        console.log("All Products:", this.products);
+    }
+}
+const manager = new ProductManager();
+manager.addProduct({ id: '1', name: "Laptop", price: 1200, description: "High-performance laptop", category: "Electronics", vendor: "Dell", quantity: 5 });
+manager.addProduct({ id: 2, name: "Phone", price: 800, category: "Electronics", vendor: "Samsung", quantity: 10 });
+console.log("Total Products:", manager.totalProducts());
+manager.listProducts();
+manager.removeProduct("1");
+console.log("Total Products after removal:", manager.totalProducts());
+manager.listProducts();

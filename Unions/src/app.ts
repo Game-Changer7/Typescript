@@ -18,7 +18,7 @@ function add(a: number | string, b: number | string): number | string {
     return `${a}${b}`;
   }
 }
-console.log(add(1, '2')); // Output: 3
+console.log(add(1, '2')); // Output: 12
 
 //? Union Types in Arrays
 let numbers: (number | string)[] = [1, 2, "3", 4];

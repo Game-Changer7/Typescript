@@ -99,8 +99,6 @@ type Admin = {
 let user1: User & Admin = {
     name: "John",
     age: 30,
-
-
     role: "Admin",
 };      
 console.log(user1);
@@ -126,7 +124,7 @@ console.log(size);
 //? Nullable Types
 let name1: string | null = "John Doe";
 name1 = null;
-console.log(name);  
+console.log(name1);  
 
 //? Optional Properties 
 type Product = {
